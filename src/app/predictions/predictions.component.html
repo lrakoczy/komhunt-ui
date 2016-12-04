@@ -1,0 +1,6 @@
+<!-- <chart [options]="options"></chart> -->
+<div *ngIf='predictions && predictions.length'>
+  <div *ngFor='let prediction of predictions'>
+    <my-prediction-chart [prediction]='prediction'></my-prediction-chart>
+  </div>
+</div>
